@@ -51,7 +51,7 @@ def generate_password(wordlist, args):
 		if c == "w":
 			password += random.choice(wordlist).title()
 		elif c == "n":
-			password += random.randint(0, 9)
+			password += str(random.randint(0, 9))
 		elif c == "s":
 			password += random.choice(args.symbols)
 		else:
