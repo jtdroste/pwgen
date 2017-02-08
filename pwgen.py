@@ -16,9 +16,6 @@ def generate(wordlist, args):
 		skipped = 0
 
 		while skipped < 100:
-			if skipped > 0:
-				print("skipped")
-
 			pw = generate_password(wordlist, args)
 
 			if len(pw) < args.minlen:
